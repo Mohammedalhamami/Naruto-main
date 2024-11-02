@@ -122,7 +122,7 @@ Route::get('/jobs/{id}', function ($id) {
        $job = Arr::first($jobs, fn ($job) => $job['id'] == $id);
 
 
-    //dd($id);
+    dd($id);
     return view('jobs', ['jobs' =>[$job]]);
 });
 
